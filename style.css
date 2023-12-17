@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner {
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(#071330,#0C4160);
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar img{
+    width: 250px;
+    padding: 15px;
+}
+
+.navbar ul a{
+    text-decoration: none;
+    font-size: 50px;
+    margin-right: 30px;
+}
+.aside h1 ,h2{
+    margin-left: 25px;
+}
+.aside {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    color: #C3CEDA; /* Default color for .aside */
+}
+
+.aside-content {
+    width: 50%;
+}
+
+.aside h1 {
+    color:#C3CEDA; /* Change the color to your desired value for h1 */
+    font-size: xx-large;
+}
+.aside h2{
+    margin-top: 5px;
+    color: cyan;
+    font-size: x-large;
+}
+.paragraphs{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.photo img{
+    width: 70%;
+    border:  2px outs cyan;
+    border-radius:  50%;
+    background:linear-gradient(#0C4160,#071330); 
+    box-shadow: 10px 5px 10px 10px rgba(0, 0, 0, 0.3);   ;
+}
+.content{
+    margin-top: 70px;
+    transform: translateY(-50%);
+    text-align: left;
+    color: #C3CEDA;
+    
+    
+
+}
+.content button a{
+    text-decoration: none;
+    color: white;
+
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: medium;
+    border: 2px solid cyan;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 7px 20px 5px rgba(0, 0, 0, 0.3); 
+}
+span {
+    background: cyan;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+    
+}
+button:hover span{
+    width: 100%;
+    
+    
+}
+button:hover{
+    border: none;
+    box-shadow: none;
+}
+
+.contact-select {
+    display: none;
+}
+
+
+@media only screen  and (max-width: 980px) {
+    body {
+        height: auto;
+    }
+    .banner {
+        width: 100%;
+        height: auto;
+    }
+    .contact-select {
+        display: inline;
+        margin-right: 50px;
+        text-align: center;
+        border-color: cyan;
+        border-radius: 25px;
+        background-color: transparent;
+        color: #C3CEDA;
+        padding: 5px;
+    }
+
+    .contact-list {
+        display: none;
+    }
+
+    .aside {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column-reverse;
+        color: #C3CEDA; /* Default color for .aside */
+    }
+
+    .photo {
+        display: flex;
+        justify-content: center;
+        text-align: center ;    
+
+    }
+
+    .aside-content {
+        margin-top: 50px;
+        margin-right: 25px;
+        width: auto;
+    }
+
+    .button {
+        width: 100% !important;
+        padding-top: 70px;
+        text-align: center;
+    }
+
+
+    @media only screen and (min-width:451px)and (max-width: 979px) {
+        .button{
+            width: 100%;
+            padding-top: 70px;
+        }
+        .contact-select{
+        display: none;
+        }
+        .contact-list{
+            display: inline;
+        }
+    
+        a {
+            text-decoration: none;
+        }
+
+        .photo img{
+            width:40%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        body {
+            height: auto;
+            width: auto;
+        }   
+    }
+
+    @media screen and (max-width: 450px) {
+        body {
+            height: auto;
+            width: auto;
+        }
+        .contact-list{
+            display: none;
+        }
+        .contact-select{
+            display: inline;
+            font-size: 50px;    
+            border-radius: 10%;
+            padding-bottom: 0%;
+            background-color: transparent;
+        }
+        a {
+            text-decoration: none;
+        }
+    }
+
+}    
